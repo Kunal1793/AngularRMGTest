@@ -1,0 +1,18 @@
+<div class="container">
+<div *ngFor="let account of AccountsList">
+    <div class="AccountLogin">
+    <div class="card">
+            <div class="card-header">
+                <p>Sign Up</p>
+            </div>
+            <div class="card-body">
+                <h5>{{account.accountName}}</h5>
+            </div> 
+            <div class="card-footer">
+                <button class="btn btn-success" (click)="GetSingleAccount(account)">Login</button>
+            </div>
+    </div>
+    <hr>
+</div>
+</div>
+</div>
